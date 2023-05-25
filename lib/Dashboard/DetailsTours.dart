@@ -20,8 +20,17 @@ class _DetailsToursState extends State<DetailsTours> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Tour Details"),),
+      backgroundColor: Color.fromARGB(255, 247, 232, 217),
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Color.fromARGB(255, 127, 106, 232),
+        title: Text(
+          "Tour Details",
+          style: TextStyle(color: Color(0xffFDC858)),
+        ),
+      ),
       body: Card(
+        color: Color.fromARGB(255, 247, 232, 217),
         elevation: 8,
         margin: EdgeInsets.all(10),
         child: Container(
@@ -31,31 +40,94 @@ class _DetailsToursState extends State<DetailsTours> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                      height: 200,
-                      child: Image.network('${widget.url}')),
-                  SizedBox(height: 10,),
+                  Container(height: 200, child: Image.network('${widget.url}')),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
-                    children: [Text("Place Name: ",style: TextStyle(color: Colors.blue,fontSize: 20),),Text('${widget.place}')],),
-                  SizedBox(height: 10,),
+                    children: [
+                      Text(
+                        "Place Name: ",
+                        style: TextStyle(color: Colors.blue, fontSize: 20),
+                      ),
+                      Text('${widget.place}')
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
-                    children: [Text("Place Des: ",style: TextStyle(color: Colors.blue,fontSize: 20),),Text('${widget.desplace}')],),
-                  SizedBox(height: 10,),
+                    children: [
+                      Text(
+                        "Place Des: ",
+                        style: TextStyle(color: Colors.blue, fontSize: 20),
+                      ),
+                      Text('${widget.desplace}')
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
-                    children: [Text("Place Name: ",style: TextStyle(color: Colors.blue,fontSize: 20),),Text('${widget.place}')],),
-                  SizedBox(height: 10,),
+                    children: [
+                      Text(
+                        "Place Name: ",
+                        style: TextStyle(color: Colors.blue, fontSize: 20),
+                      ),
+                      Text('${widget.place}')
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
-                    children: [Text("City: ",style: TextStyle(color: Colors.blue,fontSize: 20),),Text('${widget.city}')],),
-                  SizedBox(height: 10,),
+                    children: [
+                      Text(
+                        "City: ",
+                        style: TextStyle(color: Colors.blue, fontSize: 20),
+                      ),
+                      Text('${widget.city}')
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
-                    children: [Text("Tour Date: ",style: TextStyle(color: Colors.blue,fontSize: 20),),Text('${widget.date}')],),
-                  SizedBox(height: 10,),
+                    children: [
+                      Text(
+                        "Tour Date: ",
+                        style: TextStyle(color: Colors.blue, fontSize: 20),
+                      ),
+                      Text('${widget.date}')
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
-                    children: [Text("Tour Expense: ",style: TextStyle(color: Colors.blue,fontSize: 20),),Text('${widget.expense}')],),
-                  SizedBox(height: 10,),
+                    children: [
+                      Text(
+                        "Tour Expense: ",
+                        style: TextStyle(color: Colors.blue, fontSize: 20),
+                      ),
+                      Text('${widget.expense}')
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
-                    children: [Text("Tour Stay: ",style: TextStyle(color: Colors.blue,fontSize: 20),),Text('${widget.stay}')],),
-                  SizedBox(height: 10,),
+                    children: [
+                      Text(
+                        "Tour Stay: ",
+                        style: TextStyle(color: Colors.blue, fontSize: 20),
+                      ),
+                      Text('${widget.stay}')
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                 ],
               ),
             ),
